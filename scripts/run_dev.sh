@@ -146,7 +146,6 @@ fi
 
 # Map host's display socket to docker
 
-DOCKER_ARGS+=("--privileged ") # added to try and fix the issue with the camera not being able to open
 DOCKER_ARGS+=("-v $HOME/.Xauthority:/home/admin/.Xauthority:rw")
 DOCKER_ARGS+=("-e DISPLAY")
 DOCKER_ARGS+=("-e NVIDIA_VISIBLE_DEVICES=all")
